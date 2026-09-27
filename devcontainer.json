@@ -1,0 +1,13 @@
+{
+    "name": "C++ LSP Environment",
+    "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-11",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y neovim git && mkdir -p ~/.config/nvim && git clone https://github.com ~/.config/nvim"
+}
